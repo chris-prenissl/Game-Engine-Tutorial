@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC3253C6AF700C2618A /* AppDelegate.swift */; };
-		2C76DBC6253C6AF700C2618A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC5253C6AF700C2618A /* ViewController.swift */; };
 		2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC7253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld */; };
 		2C76DBCB253C6AF800C2618A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C76DBCA253C6AF800C2618A /* Assets.xcassets */; };
 		2C76DBCE253C6AF800C2618A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C76DBCC253C6AF800C2618A /* Main.storyboard */; };
 		2C76DBDA253C6AF800C2618A /* Game_Engine_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBD9253C6AF800C2618A /* Game_Engine_TutorialTests.swift */; };
 		2C76DBE5253C6AF800C2618A /* Game_Engine_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBE4253C6AF800C2618A /* Game_Engine_TutorialUITests.swift */; };
+		2C76DC07253C6EBA00C2618A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DC06253C6EBA00C2618A /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2C76DBC0253C6AF700C2618A /* Game Engine Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Engine Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C76DBC3253C6AF700C2618A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C76DBC5253C6AF700C2618A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C76DBC8253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine_Tutorial.xcdatamodel; sourceTree = "<group>"; };
 		2C76DBCA253C6AF800C2618A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C76DBCD253C6AF800C2618A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		2C76DBE0253C6AF800C2618A /* Game Engine TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game Engine TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C76DBE4253C6AF800C2618A /* Game_Engine_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_Engine_TutorialUITests.swift; sourceTree = "<group>"; };
 		2C76DBE6253C6AF800C2618A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C76DC06253C6EBA00C2618A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +98,9 @@
 		2C76DBC2253C6AF700C2618A /* Game Engine Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				2C76DBC3253C6AF700C2618A /* AppDelegate.swift */,
-				2C76DBC5253C6AF700C2618A /* ViewController.swift */,
-				2C76DBCA253C6AF800C2618A /* Assets.xcassets */,
+				2C76DC06253C6EBA00C2618A /* GameView.swift */,
 				2C76DBCC253C6AF800C2618A /* Main.storyboard */,
-				2C76DBCF253C6AF800C2618A /* Info.plist */,
-				2C76DBD0253C6AF800C2618A /* Game_Engine_Tutorial.entitlements */,
-				2C76DBC7253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld */,
+				2C76DBF9253C6CC100C2618A /* otherFiles */,
 			);
 			path = "Game Engine Tutorial";
 			sourceTree = "<group>";
@@ -125,6 +121,18 @@
 				2C76DBE6253C6AF800C2618A /* Info.plist */,
 			);
 			path = "Game Engine TutorialUITests";
+			sourceTree = "<group>";
+		};
+		2C76DBF9253C6CC100C2618A /* otherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C76DBCA253C6AF800C2618A /* Assets.xcassets */,
+				2C76DBC3253C6AF700C2618A /* AppDelegate.swift */,
+				2C76DBCF253C6AF800C2618A /* Info.plist */,
+				2C76DBD0253C6AF800C2618A /* Game_Engine_Tutorial.entitlements */,
+				2C76DBC7253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld */,
+			);
+			path = otherFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */,
-				2C76DBC6253C6AF700C2618A /* ViewController.swift in Sources */,
+				2C76DC07253C6EBA00C2618A /* GameView.swift in Sources */,
 				2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,12 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Game Engine Tutorial/Game_Engine_Tutorial.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Game Engine Tutorial/otherFiles/Game_Engine_Tutorial.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R2YVCZ58UE;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Game Engine Tutorial/Info.plist";
+				INFOPLIST_FILE = "Game Engine Tutorial/otherFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -446,12 +454,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Game Engine Tutorial/Game_Engine_Tutorial.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Game Engine Tutorial/otherFiles/Game_Engine_Tutorial.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R2YVCZ58UE;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Game Engine Tutorial/Info.plist";
+				INFOPLIST_FILE = "Game Engine Tutorial/otherFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
