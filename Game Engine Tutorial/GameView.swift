@@ -1,18 +1,19 @@
 import MetalKit
 
 public typealias float3 = SIMD3<Float>
+public typealias float4 = SIMD4<Float>
 
 class GameView: MTKView {
+    
+    struct Vertex {
+        var position: float3
+        var color: float4
+    }
     
     var commandQueue : MTLCommandQueue!
     var renderPipelineState : MTLRenderPipelineState!
     
-    let vertices: [float3] = [
-        float3(0, 1, 0),
-        float3(-1,-1,0),
-        float3(1,-1,0)
-    ]
-    
+    var vertices: [Vertex]!
     var vertexBuffer: MTLBuffer!
     
     required init(coder: NSCoder) {
@@ -24,7 +25,16 @@ class GameView: MTKView {
         self.commandQueue = device?.makeCommandQueue()
         
         createRenderPipelineState()
+        createVertices()
         createBuffers()
+    }
+    
+    func createVertices() {
+        vertices = [
+            Vertex(position: float3(0, 1, 0), color: float4(1,0,0,1)),
+            Vertex(position: float3(-1,-1,0), color: float4(0,1,0,1)),
+            Vertex(position: float3( 1,-1,0), color: float4(0,0,1,1))
+        ]
     }
     
     func createRenderPipelineState() {
@@ -45,8 +55,7 @@ class GameView: MTKView {
     }
     
     func createBuffers() {
-        vertexBuffer = device?.makeBuffer(bytes: vertices, length: MemoryLayout<float3>.stride * vertices.count * 2, options: [])
-        
+        vertexBuffer = device?.makeBuffer(bytes: vertices, length: MemoryLayout<Vertex>.stride * vertices.count, options: [])
     }
     
     override func draw(_ dirtyRect: NSRect) {
