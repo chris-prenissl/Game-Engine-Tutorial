@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0834B2255B4A80002A9465 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0834B1255B4A80002A9465 /* types.swift */; };
 		2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC3253C6AF700C2618A /* AppDelegate.swift */; };
 		2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC7253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld */; };
 		2C76DBCB253C6AF800C2618A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C76DBCA253C6AF800C2618A /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0834B1255B4A80002A9465 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
 		2C76DBC0253C6AF700C2618A /* Game Engine Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Engine Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C76DBC3253C6AF700C2618A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C76DBC8253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine_Tutorial.xcdatamodel; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				2CA2EADF2541CAAB000671EF /* MyShaders.metal */,
 				2C76DBCC253C6AF800C2618A /* Main.storyboard */,
 				2C76DBF9253C6CC100C2618A /* otherFiles */,
+				2C0834B1255B4A80002A9465 /* types.swift */,
 			);
 			path = "Game Engine Tutorial";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				2CA2EAE02541CAAB000671EF /* MyShaders.metal in Sources */,
 				2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */,
+				2C0834B2255B4A80002A9465 /* types.swift in Sources */,
 				2C76DC07253C6EBA00C2618A /* GameView.swift in Sources */,
 				2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */,
 			);
