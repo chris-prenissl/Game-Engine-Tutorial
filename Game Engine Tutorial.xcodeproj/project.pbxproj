@@ -13,6 +13,12 @@
 		2191B184255DC29C0051CCDF /* VertexDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B183255DC29C0051CCDF /* VertexDescriptorLibrary.swift */; };
 		2191B189255DC8AB0051CCDF /* RenderPipelineDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B188255DC8AB0051CCDF /* RenderPipelineDescriptorLibrary.swift */; };
 		2191B18E255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B18D255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift */; };
+		2191B194255DE0590051CCDF /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B193255DE0590051CCDF /* GameObject.swift */; };
+		2191B19C255DE3090051CCDF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B19B255DE3090051CCDF /* Renderer.swift */; };
+		2191B1A1255DE6EF0051CCDF /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1A0255DE6EF0051CCDF /* MeshLibrary.swift */; };
+		2191B1A6255DEDDA0051CCDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1A5255DEDDA0051CCDF /* Player.swift */; };
+		2191B1AB255DEF3D0051CCDF /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1AA255DEF3D0051CCDF /* Node.swift */; };
+		2191B1B1255DF0290051CCDF /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1B0255DF0290051CCDF /* Renderable.swift */; };
 		2C0834B2255B4A80002A9465 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0834B1255B4A80002A9465 /* Types.swift */; };
 		2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC3253C6AF700C2618A /* AppDelegate.swift */; };
 		2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C76DBC7253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld */; };
@@ -48,6 +54,12 @@
 		2191B183255DC29C0051CCDF /* VertexDescriptorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexDescriptorLibrary.swift; sourceTree = "<group>"; };
 		2191B188255DC8AB0051CCDF /* RenderPipelineDescriptorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineDescriptorLibrary.swift; sourceTree = "<group>"; };
 		2191B18D255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineStateLibrary.swift; sourceTree = "<group>"; };
+		2191B193255DE0590051CCDF /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		2191B19B255DE3090051CCDF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		2191B1A0255DE6EF0051CCDF /* MeshLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
+		2191B1A5255DEDDA0051CCDF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2191B1AA255DEF3D0051CCDF /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2191B1B0255DF0290051CCDF /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		2C0834B1255B4A80002A9465 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		2C76DBC0253C6AF700C2618A /* Game Engine Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Engine Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C76DBC3253C6AF700C2618A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +120,7 @@
 				2191B183255DC29C0051CCDF /* VertexDescriptorLibrary.swift */,
 				2191B188255DC8AB0051CCDF /* RenderPipelineDescriptorLibrary.swift */,
 				2191B18D255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift */,
+				2191B1A0255DE6EF0051CCDF /* MeshLibrary.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -125,8 +138,36 @@
 			children = (
 				2C76DC06253C6EBA00C2618A /* GameView.swift */,
 				2C76DBCC253C6AF800C2618A /* Main.storyboard */,
+				2191B19B255DE3090051CCDF /* Renderer.swift */,
 			);
 			path = Display;
+			sourceTree = "<group>";
+		};
+		2191B192255DE0310051CCDF /* Game Content */ = {
+			isa = PBXGroup;
+			children = (
+				2191B1B8255DF1B80051CCDF /* GameObjects */,
+				2191B1AF255DF00B0051CCDF /* Protocols */,
+				2191B1AA255DEF3D0051CCDF /* Node.swift */,
+			);
+			path = "Game Content";
+			sourceTree = "<group>";
+		};
+		2191B1AF255DF00B0051CCDF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2191B1B0255DF0290051CCDF /* Renderable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2191B1B8255DF1B80051CCDF /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2191B1A5255DEDDA0051CCDF /* Player.swift */,
+				2191B193255DE0590051CCDF /* GameObject.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 		2C76DBB7253C6AF700C2618A = {
@@ -152,6 +193,7 @@
 		2C76DBC2253C6AF700C2618A /* Game Engine Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2191B192255DE0310051CCDF /* Game Content */,
 				218D0966255DB242002C9B21 /* Display */,
 				218D0965255DB234002C9B21 /* Shaders */,
 				218D0964255DB225002C9B21 /* Libraries */,
@@ -320,16 +362,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2191B1B1255DF0290051CCDF /* Renderable.swift in Sources */,
 				2191B189255DC8AB0051CCDF /* RenderPipelineDescriptorLibrary.swift in Sources */,
 				2191B184255DC29C0051CCDF /* VertexDescriptorLibrary.swift in Sources */,
 				2CA2EAE02541CAAB000671EF /* MyShaders.metal in Sources */,
 				2191B177255DB7320051CCDF /* Preferences.swift in Sources */,
+				2191B1A1255DE6EF0051CCDF /* MeshLibrary.swift in Sources */,
 				218D096B255DB4A5002C9B21 /* Engine.swift in Sources */,
+				2191B19C255DE3090051CCDF /* Renderer.swift in Sources */,
 				2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */,
 				2C0834B2255B4A80002A9465 /* Types.swift in Sources */,
 				2191B17C255DBA5A0051CCDF /* ShaderLibrary.swift in Sources */,
+				2191B194255DE0590051CCDF /* GameObject.swift in Sources */,
+				2191B1AB255DEF3D0051CCDF /* Node.swift in Sources */,
 				2C76DC07253C6EBA00C2618A /* GameView.swift in Sources */,
 				2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */,
+				2191B1A6255DEDDA0051CCDF /* Player.swift in Sources */,
 				2191B18E255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
