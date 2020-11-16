@@ -16,7 +16,9 @@ public enum ClearColor {
 
 
 class Preferences {
-    public static var clearColor: MTLClearColor = ClearColor.blue
+    public static var clearColor: MTLClearColor = ClearColor.grey
     
     public static var MainPixelFormat: MTLPixelFormat = MTLPixelFormat.bgra8Unorm
+    
+    public static var StartingSceneType: SceneTypes = SceneTypes.Sandbox
 }

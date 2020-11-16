@@ -21,6 +21,7 @@ class Engine {
         RenderPipelineDescriptorLibrary.initialize()
         RenderPipelineStateLibrary.initialize()
         MeshLibrary.initialize()
+        SceneManager.Initialize(.Sandbox)
     }
     
 }
