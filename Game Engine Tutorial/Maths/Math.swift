@@ -19,6 +19,18 @@ public var Z_AXIS: float3 {
     return float3(0,0,1)
 }
 
+
+extension Float {
+    var toRadians: Float {
+        return (self / 180.0) * Float.pi
+    }
+    
+    var toDegree: Float {
+        return self * (180.0 / Float.pi)
+    }
+}
+
+
 extension matrix_float4x4 {
     
     mutating func translate(direction: float3) {

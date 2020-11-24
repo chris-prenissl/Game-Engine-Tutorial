@@ -30,6 +30,7 @@ class SceneManager {
     
     public static func TickScene(renderCommandEncoder: MTLRenderCommandEncoder, deltaTime: Float) {
         
+        _currentScene.updateCameras(deltaTime: deltaTime)
         _currentScene.update(deltaTime: deltaTime)
         _currentScene.render(renderCommandEncoder: renderCommandEncoder)
     }

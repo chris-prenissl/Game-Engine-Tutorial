@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211A51B4256DA3BD00FABD9A /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211A51B3256DA3BD00FABD9A /* Camera.swift */; };
+		211A51BC256DA49B00FABD9A /* DebugCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211A51BB256DA49B00FABD9A /* DebugCamera.swift */; };
+		211A51C1256DA99900FABD9A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211A51C0256DA99900FABD9A /* CameraManager.swift */; };
 		218D096B255DB4A5002C9B21 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218D096A255DB4A5002C9B21 /* Engine.swift */; };
 		2191B177255DB7320051CCDF /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B176255DB7320051CCDF /* Preferences.swift */; };
 		2191B17C255DBA5A0051CCDF /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B17B255DBA5A0051CCDF /* ShaderLibrary.swift */; };
@@ -16,7 +19,7 @@
 		2191B194255DE0590051CCDF /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B193255DE0590051CCDF /* GameObject.swift */; };
 		2191B19C255DE3090051CCDF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B19B255DE3090051CCDF /* Renderer.swift */; };
 		2191B1A1255DE6EF0051CCDF /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1A0255DE6EF0051CCDF /* MeshLibrary.swift */; };
-		2191B1A6255DEDDA0051CCDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1A5255DEDDA0051CCDF /* Player.swift */; };
+		2191B1A6255DEDDA0051CCDF /* Pointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1A5255DEDDA0051CCDF /* Pointer.swift */; };
 		2191B1AB255DEF3D0051CCDF /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1AA255DEF3D0051CCDF /* Node.swift */; };
 		2191B1B1255DF0290051CCDF /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2191B1B0255DF0290051CCDF /* Renderable.swift */; };
 		219BE72D255F11CF0039E5CD /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BE72C255F11CF0039E5CD /* Math.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211A51B3256DA3BD00FABD9A /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		211A51BB256DA49B00FABD9A /* DebugCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCamera.swift; sourceTree = "<group>"; };
+		211A51C0256DA99900FABD9A /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		218D096A255DB4A5002C9B21 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		2191B176255DB7320051CCDF /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		2191B17B255DBA5A0051CCDF /* ShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
@@ -64,7 +70,7 @@
 		2191B193255DE0590051CCDF /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		2191B19B255DE3090051CCDF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		2191B1A0255DE6EF0051CCDF /* MeshLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
-		2191B1A5255DEDDA0051CCDF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2191B1A5255DEDDA0051CCDF /* Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointer.swift; sourceTree = "<group>"; };
 		2191B1AA255DEF3D0051CCDF /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2191B1B0255DF0290051CCDF /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		219BE72C255F11CF0039E5CD /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
@@ -117,6 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211A51B2256DA3A800FABD9A /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				211A51B3256DA3BD00FABD9A /* Camera.swift */,
+				211A51BB256DA49B00FABD9A /* DebugCamera.swift */,
+			);
+			path = Cameras;
+			sourceTree = "<group>";
+		};
 		218D0963255DB20D002C9B21 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +176,7 @@
 		2191B192255DE0310051CCDF /* Game Content */ = {
 			isa = PBXGroup;
 			children = (
+				211A51B2256DA3A800FABD9A /* Cameras */,
 				219E90D125631A3E003F66C1 /* Scenes */,
 				2191B1B8255DF1B80051CCDF /* GameObjects */,
 				2191B1AF255DF00B0051CCDF /* Protocols */,
@@ -180,7 +196,7 @@
 		2191B1B8255DF1B80051CCDF /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
-				2191B1A5255DEDDA0051CCDF /* Player.swift */,
+				2191B1A5255DEDDA0051CCDF /* Pointer.swift */,
 				2191B193255DE0590051CCDF /* GameObject.swift */,
 			);
 			path = GameObjects;
@@ -206,6 +222,7 @@
 		21CB8FBA256326360024CEEE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				211A51C0256DA99900FABD9A /* CameraManager.swift */,
 				21CB8FBB256326470024CEEE /* SceneManager.swift */,
 			);
 			path = Managers;
@@ -422,7 +439,9 @@
 				2CA2EAE02541CAAB000671EF /* MyShaders.metal in Sources */,
 				2191B177255DB7320051CCDF /* Preferences.swift in Sources */,
 				2191B1A1255DE6EF0051CCDF /* MeshLibrary.swift in Sources */,
+				211A51C1256DA99900FABD9A /* CameraManager.swift in Sources */,
 				21E525C7256338EC00D95278 /* Mouse.swift in Sources */,
+				211A51BC256DA49B00FABD9A /* DebugCamera.swift in Sources */,
 				218D096B255DB4A5002C9B21 /* Engine.swift in Sources */,
 				2191B19C255DE3090051CCDF /* Renderer.swift in Sources */,
 				2C76DBC9253C6AF700C2618A /* Game_Engine_Tutorial.xcdatamodeld in Sources */,
@@ -436,7 +455,8 @@
 				2C76DC07253C6EBA00C2618A /* GameView.swift in Sources */,
 				21E525BF256336C500D95278 /* KeyCodes.swift in Sources */,
 				2C76DBC4253C6AF700C2618A /* AppDelegate.swift in Sources */,
-				2191B1A6255DEDDA0051CCDF /* Player.swift in Sources */,
+				211A51B4256DA3BD00FABD9A /* Camera.swift in Sources */,
+				2191B1A6255DEDDA0051CCDF /* Pointer.swift in Sources */,
 				21CB8FB6256323F10024CEEE /* SandboxScene.swift in Sources */,
 				2191B18E255DCD5A0051CCDF /* RenderPipelineStateLibrary.swift in Sources */,
 			);

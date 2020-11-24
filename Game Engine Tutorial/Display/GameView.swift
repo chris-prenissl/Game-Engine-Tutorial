@@ -19,7 +19,12 @@ class GameView: MTKView {
         self.delegate = renderer
     }
     
-    //Keyboard input
+}
+
+//Keyboard input
+extension GameView {
+    
+    
     override var acceptsFirstResponder: Bool { return true }
     
     override func keyDown(with event: NSEvent) {
@@ -30,8 +35,10 @@ class GameView: MTKView {
         Keyboard.SetKeyPressed(event.keyCode, isOn: false)
     }
     
-    
-    //Mouse input
+}
+
+//Mouse Key Input
+extension GameView {
     override func mouseDown(with event: NSEvent) {
          Mouse.SetMouseButtonPressed(button: event.buttonNumber, isOn: true)
     }
@@ -55,7 +62,11 @@ class GameView: MTKView {
     override func otherMouseUp(with event: NSEvent) {
          Mouse.SetMouseButtonPressed(button: event.buttonNumber, isOn: false)
     }
+}
 
+
+//Mouse move Input    
+extension GameView {
     
     override func mouseMoved(with event: NSEvent) {
          setMousePositionChanged(event: event)
