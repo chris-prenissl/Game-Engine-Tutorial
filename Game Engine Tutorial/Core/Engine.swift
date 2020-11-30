@@ -18,6 +18,7 @@ class Engine {
         
         ShaderLibrary.initialize()
         VertexDescriptorLibrary.initialize()
+        DepthStencilStateLibrary.Initialize()
         RenderPipelineDescriptorLibrary.initialize()
         RenderPipelineStateLibrary.initialize()
         MeshLibrary.initialize()

@@ -13,6 +13,7 @@ class GameView: MTKView {
         
         self.clearColor = Preferences.clearColor
         self.colorPixelFormat = Preferences.MainPixelFormat
+        self.depthStencilPixelFormat = Preferences.MainDepthPixelFormat
         
         self.renderer = Renderer(self)
         
@@ -65,7 +66,8 @@ extension GameView {
 }
 
 
-//Mouse move Input    
+//Mouse move Input
+
 extension GameView {
     
     override func mouseMoved(with event: NSEvent) {
