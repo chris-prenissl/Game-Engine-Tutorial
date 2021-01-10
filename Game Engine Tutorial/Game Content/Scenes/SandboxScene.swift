@@ -16,14 +16,23 @@ class SandboxScene: Scene {
         
         addCamera(debugCamera)
         
-        debugCamera.position.z = 5
+        debugCamera.position.z = 30
         
-        addChild(cube)
+        addCubes()
     }
     
-    override func update(deltaTime: Float) {
-        cube.rotation.x += deltaTime
-        cube.rotation.y += deltaTime
-        super.update(deltaTime: deltaTime)
+    func addCubes() {
+        for y in -20..<20 {
+            let posY = Float(y) + 0.5
+            for x in -24..<24 {
+                let posX = Float(x) + 0.5
+                let cube = Cube()
+                cube.position.y = posY
+                cube.position.x = posX
+                cube.scale = float3(repeating: 0.1)
+                cube.setColor(ColorUtil.randomColor)
+                addChild(cube)
+            }
+        }
     }
 }

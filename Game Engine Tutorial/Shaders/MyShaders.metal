@@ -28,7 +28,14 @@ struct ModelConstants {
     float4x4 modelMatrix;
 };
 
-vertex RasterizerData basic_vertex_shader(const VertixIn vIn [[ stage_in ]], constant SceneConstants &sceneConstants [[ buffer(1) ]], constant ModelConstants &modelConstants [[ buffer(2) ]]) {
+struct Material {
+    float4 color;
+    bool useMaterialColor;
+};
+
+vertex RasterizerData basic_vertex_shader(const VertixIn vIn [[ stage_in ]],
+                                          constant SceneConstants &sceneConstants [[ buffer(1) ]],
+                                          constant ModelConstants &modelConstants [[ buffer(2) ]]) {
     
     RasterizerData rd;
     
@@ -39,8 +46,9 @@ vertex RasterizerData basic_vertex_shader(const VertixIn vIn [[ stage_in ]], con
 }
 
 
-fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]]) {
-    float4 color = rd.color;
+fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
+                                     constant Material &material [[ buffer(1) ]]) {
+    float4 color = material.useMaterialColor ? material.color : rd.color;
     
     return half4(color.r, color.g, color.b, color.a);
 }

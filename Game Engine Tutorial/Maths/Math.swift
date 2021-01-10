@@ -28,6 +28,10 @@ extension Float {
     var toDegree: Float {
         return self * (180.0 / Float.pi)
     }
+    
+    static var randomZeroToOne: Float {
+        return Float(arc4random()) / Float(UINT32_MAX)
+    }
 }
 
 
