@@ -14,8 +14,8 @@ class Scene: Node {
     
     var sceneConstants = SceneConstants()
     
-    override init(){
-        super.init()
+    init(){
+        super.init(name: "Scene")
         buildScene()
     }
     

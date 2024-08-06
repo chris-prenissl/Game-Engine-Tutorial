@@ -24,9 +24,9 @@ class SandboxScene: Scene {
     
     
     func addCubes() {
-        cubeCollection1 = CubeCollection(cubesWide: 10, cubesHigh: 10, cubesBack: 10)
+        cubeCollection1 = CubeCollection(cubesWide: 6, cubesHigh: 6, cubesBack: 6)
         cubeCollection1.position.x -= 16
-        cubeCollection2 = CubeCollection(cubesWide: 10, cubesHigh: 10, cubesBack: 10)
+        cubeCollection2 = CubeCollection(cubesWide: 6, cubesHigh: 6, cubesBack: 6)
         addChild(cubeCollection1)
         addChild(cubeCollection2)
     }

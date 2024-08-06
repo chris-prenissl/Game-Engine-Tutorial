@@ -18,6 +18,7 @@ class CubeCollection: InstancedGameObject {
         self.cubesWide = cubesWide
         self.cubesHigh = cubesHigh
         self.cubesBack = cubesBack
+        self.name = "Cube Collection"
         
         print("CUBE COUNT: \(cubesWide * cubesHigh * cubesBack)")
         
