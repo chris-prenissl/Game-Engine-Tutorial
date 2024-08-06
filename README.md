@@ -6,7 +6,7 @@ Tutorial where I learned to build a 3D engine from ground up for Apple platforms
 
 ## Technologies
 
-_MacOS_ | _Metal Render Pipeline_ 
+_MacOS_ | _Metal Render Pipeline_
 
 ## Images
 
@@ -33,3 +33,7 @@ _MacOS_ | _Metal Render Pipeline_
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+
+## Appreciation
+
+Thanks to 2etime for the [tutorial](https://www.youtube.com/watch?v=PcA-VAybgIQ&list=PLEXt1-oJUa4BVgjZt9tK2MhV_DW7PVDsg) so I could learn about 3D magic!
