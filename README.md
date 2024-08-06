@@ -6,7 +6,7 @@ Tutorial where I learned to build a 3D engine from ground up for Apple platforms
 
 ## Technologies
 
-_MacOS_ | _Metal Render Pipeline_
+_Swift_ | _Metal_ | _Render Pipeline_ | 3D
 
 ## Images
 
